@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  distDir: process.env.NEXT_DIST_DIR ?? ".next",
+  poweredByHeader: false,
+  trailingSlash: false,
+  images: { formats: ["image/avif", "image/webp"] },
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

@@ -1,0 +1,3 @@
+export function VideoPlaceholder({ title }: { title: string }) {
+  return <section className="video-section"><div className="shell video-frame"><div className="video-copy"><p className="eyebrow">En vidéo</p><h2>{title}</h2><p>La vidéo de présentation d&apos;Emma pourra être intégrée ici dès que son adresse YouTube aura été confirmée. Le lecteur sera chargé uniquement à la demande afin de préserver les performances et la confidentialité.</p></div><div className="video-placeholder" aria-label="Emplacement réservé à la future vidéo YouTube"><span aria-hidden="true">▶</span><p>Vidéo bientôt disponible</p></div></div></section>;
+}
