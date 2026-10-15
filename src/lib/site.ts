@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Parenth'Emma",
+  name: "Emma Peynet",
   practitioner: "Emma Peynet",
   phoneDisplay: "06 95 32 18 22",
   phoneHref: "tel:+33695321822",
