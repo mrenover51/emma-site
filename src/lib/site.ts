@@ -36,7 +36,7 @@ export const services = [
     title: "Naturopathie & gemmothérapie",
     description: "Un accompagnement global qui s'appuie sur l'hygiène de vie et, lorsque cela est pertinent, sur les bourgeons et jeunes pousses.",
     href: "/naturopathie",
-    image: "/images/coaching-nutrition.webp",
+    image: "/images/coaching-nutrition-new.webp",
     imageAlt: "Plantes, bourgeons et ingrédients naturels sur une table en bois",
   },
   {
