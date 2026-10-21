@@ -1,6 +1,6 @@
-# Audit SEO technique — Parenth'Emma
+# Audit SEO technique — Emma Peynet
 
-Audit réalisé le 15 octobre 2026 sur le code Next.js local. Aucun chiffre de trafic, de position ou de Lighthouse n'est supposé.
+Audit initial réalisé le 15 octobre 2026 et finalisé le 21 octobre 2026 sur le code Next.js local. Aucun chiffre de trafic, de position ou de Lighthouse n'est supposé.
 
 ## Synthèse
 
@@ -16,10 +16,10 @@ Audit réalisé le 15 octobre 2026 sur le code Next.js local. Aucun chiffre de t
 | Données structurées | Corrigé | Graphe LocalBusiness, Person, WebSite ; Service et BreadcrumbList sur les prestations. |
 | Images | Réalisé | Dimensions réservées, formats WebP disponibles, textes alternatifs descriptifs. Logo WebP utilisé. |
 | Liens internes | Réalisé | Navigation, cartes de services, prestations associées et CTA contact. |
-| Réseaux sociaux | Réalisé | Open Graph, Twitter Card et image OG générée. |
+| Réseaux sociaux | Réalisé | Open Graph et Twitter Card complets et propres à chaque page, avec image OG générée. |
 | URL / slash final | Corrigé | `trailingSlash: false` explicite. |
 | Paramètres URL | À vérifier | Aucun filtre indexable actuellement ; surveiller les paramètres dans Search Console après lancement. |
-| Redirections Odoo | Nécessite un accès externe | L'ancien site et son sitemap n'ont pas pu être inventoriés depuis l'environnement d'audit. |
+| Redirections Odoo | Nécessite un export | Aucune ancienne URL n'a pu être confirmée dans la documentation ni dans les résultats publics consultés ; aucune redirection spéculative n'est implémentée. |
 | Performance terrain | Après mise en ligne | Mesurer LCP, INP et CLS avec CrUX/Search Console ; aucun score n'est revendiqué. |
 
 ## Points techniques observés
@@ -30,6 +30,8 @@ Audit réalisé le 15 octobre 2026 sur le code Next.js local. Aucun chiffre de t
 - La carte Google est chargée paresseusement. Aucun script analytique ou tiers bloquant n'est présent.
 - Les contenus de bien-être utilisent des formulations prudentes et rappellent qu'ils ne remplacent pas un suivi médical.
 - Les articles sont absents : l'état vide ne crée aucune fausse publication et le sitemap ne génère aucune URL fictive.
+- Le NAP et les zones desservies utilisés par les données structurées sont centralisés dans `src/lib/site.ts`.
+- Les fichiers `sitemap.ts` et `robots.ts` ont été vérifiés : ils exposent les URL publiques et le sitemap sur le domaine canonique en `www`.
 
 ## Priorités restantes
 

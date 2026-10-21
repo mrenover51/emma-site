@@ -9,7 +9,7 @@
 - [x] Liens téléphone, e-mail, itinéraire et formulaire explicite sur l'absence d'envoi backend
 - [x] Images dimensionnées, formats modernes et chargement différé hors éléments prioritaires
 - [x] Page 404 et URL sans slash final
-- [x] Lint, typecheck et build à exécuter après chaque dernière modification
+- [x] Validation du 21 octobre 2026 : `npm run lint`, `npx tsc --noEmit` et `npm run build` réussis
 
 ## À vérifier avant mise en ligne
 

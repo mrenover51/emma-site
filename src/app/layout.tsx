@@ -20,16 +20,19 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600"],
 });
 
+const siteTitle = "Emma Peynet | Réflexologie et naturopathie à Avize";
+const siteDescription = "Emma Peynet vous accompagne en réflexologie, naturopathie, gemmothérapie et coaching en nutrition à Avize, près d’Épernay et de la Côte des Blancs.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: "Parenth'Emma | Réflexologie & naturopathie à Avize", template: "%s | Parenth'Emma" },
-  description: "Emma Peynet vous accompagne en réflexologie, naturopathie, gemmothérapie et nutrition à Avize, près d'Épernay et de la Côte des Blancs.",
-  applicationName: "Parenth'Emma",
-  keywords: ["réflexologie Avize", "naturopathe Avize", "nutrition Épernay", "gemmothérapie", "Côte des Blancs"],
+  title: { default: siteTitle, template: "%s | Emma Peynet" },
+  description: siteDescription,
+  applicationName: "Emma Peynet",
+  keywords: ["réflexologie Avize", "réflexologie Épernay", "naturopathe Avize", "naturopathie Épernay", "coaching nutrition Avize", "coaching nutrition Épernay", "gemmothérapie Avize", "Côte des Blancs"],
   authors: [{ name: "Emma Peynet" }],
   alternates: { canonical: SITE.url },
-  openGraph: { type: "website", locale: "fr_FR", siteName: "Parenth'Emma", url: SITE.url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Parenth'Emma — Emma Peynet, naturopathie, réflexologie et coaching en nutrition" }] },
-  twitter: { card: "summary_large_image", images: ["/opengraph-image"] },
+  openGraph: { title: siteTitle, description: siteDescription, type: "website", locale: "fr_FR", siteName: SITE.name, url: SITE.url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Emma Peynet — réflexologie, naturopathie et coaching en nutrition à Avize" }] },
+  twitter: { card: "summary_large_image", title: siteTitle, description: siteDescription, images: ["/opengraph-image"] },
   robots: { index: true, follow: true },
   verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
 };
@@ -42,14 +45,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@type": "LocalBusiness",
         "@id": `${SITE.url}/#business`,
         name: SITE.name,
-        alternateName: `${SITE.name} — Emma Peynet`,
         url: SITE.url,
-        telephone: "+33695321822",
+        description: siteDescription,
+        telephone: SITE.phoneInternational,
         email: SITE.email,
         image: `${SITE.url}/opengraph-image`,
         founder: { "@id": `${SITE.url}/#person` },
-        address: { "@type": "PostalAddress", streetAddress: "8 place Léon Bourgeois", postalCode: "51190", addressLocality: "Avize", addressCountry: "FR" },
-        areaServed: ["Avize", "Épernay", "Vertus", "Blancs-Coteaux", "Côte des Blancs"],
+        address: { "@type": "PostalAddress", streetAddress: SITE.streetAddress, postalCode: SITE.postalCode, addressLocality: SITE.addressLocality, addressCountry: SITE.addressCountry },
+        areaServed: SITE.serviceAreas,
       },
       {
         "@type": "Person",

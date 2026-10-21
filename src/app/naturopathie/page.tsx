@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ServiceEditorial } from "@/components/service-editorial";
 import { pageMetadata } from "@/lib/site";
-export const metadata: Metadata = pageMetadata("Naturopathie et gemmothérapie à Avize", "Un accompagnement en naturopathie et gemmothérapie avec Emma Peynet à Avize, dans la Côte des Blancs.", "/naturopathie");
+export const metadata: Metadata = pageMetadata("Naturopathie à Avize, près d’Épernay", "Naturopathie près d’Épernay et gemmothérapie à Avize avec Emma Peynet : un accompagnement personnalisé autour de l’hygiène de vie.", "/naturopathie");
 function ServiceDetail(props: Record<string, unknown>) {
     void props;
     return <ServiceEditorial
@@ -37,7 +37,7 @@ function ServiceDetail(props: Record<string, unknown>) {
                     "La place du mouvement peut être abordée en tenant compte des possibilités et des préférences de chacun. Enfin, la détente rappelle l’importance de repérer des moments de pause réalistes, même modestes, dans l’organisation de la semaine.",
                 ],
                 image: "/images/portrait-emma.webp",
-                imageAlt: "Portrait d’Emma Peynet, fondatrice de Parenth’Emma à Avize",
+                imageAlt: "Portrait d’Emma Peynet, naturopathe à Avize",
                 imagePosition: "center 28%",
             },
             {

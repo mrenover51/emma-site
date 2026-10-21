@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ServiceEditorial } from "@/components/service-editorial";
 import { pageMetadata } from "@/lib/site";
-export const metadata: Metadata = pageMetadata("Réflexologie plantaire et palmaire à Avize", "Découvrez la réflexologie plantaire et palmaire proposée par Emma Peynet à Avize, près d'Épernay.", "/reflexologie");
+export const metadata: Metadata = pageMetadata("Réflexologie à Avize, près d’Épernay", "Réflexologie plantaire et palmaire avec Emma Peynet à Avize, près d’Épernay : des séances de bien-être personnalisées, centrées sur la détente.", "/reflexologie");
 function ServiceDetail(props: Record<string, unknown>) {
     void props;
     return <ServiceEditorial
@@ -37,7 +37,7 @@ function ServiceDetail(props: Record<string, unknown>) {
                     "Au-delà de la technique, la séance peut devenir une expérience sensorielle : le rythme ralentit, l’attention revient vers le corps et un temps est enfin réservé à soi-même.",
                 ],
                 image: "/images/soin-emma.webp",
-                imageAlt: "Séance de réflexologie plantaire dans l’univers Parenth’Emma",
+                imageAlt: "Séance de réflexologie plantaire avec Emma Peynet",
                 imagePosition: "center 35%",
             },
             {

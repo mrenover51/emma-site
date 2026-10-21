@@ -2,7 +2,13 @@
 
 ## État de l'inventaire
 
-**À vérifier / nécessite un accès externe** : le site public, son `robots.txt` et son `sitemap.xml` n'ont pas été accessibles depuis l'environnement d'audit. Aucune ancienne URL n'est donc inventée et aucune redirection non vérifiée n'est ajoutée au code.
+**À vérifier / nécessite un export de l'ancien site et de Search Console** : la documentation locale ne contient aucun inventaire des anciennes URL Odoo. Une recherche publique effectuée le 21 octobre 2026 n'a pas permis de confirmer d'ancien chemin indexé correspondant aux pages actuelles. Aucune ancienne URL n'est donc inventée et aucune redirection non vérifiée n'est ajoutée au code.
+
+## État dans le projet
+
+- **Implémenté** : les nouvelles URL publiques sont stables, sans slash final, et figurent dans le sitemap.
+- **Non implémenté volontairement** : aucune redirection Odoo, faute de source et de destination confirmées.
+- **Action manuelle requise** : exporter le sitemap Odoo, les URL Search Console et les backlinks avant la bascule, puis compléter la table ci-dessous.
 
 ## Procédure avant bascule
 
@@ -24,4 +30,4 @@
 | À exporter | À relever | Actualités / articles | `/actualites` ou article équivalent | Cas par cas |
 | À exporter | À relever | Contact | `/contact` | À valider |
 
-Ne pas rediriger toutes les anciennes URL vers l'accueil. Une page sans équivalent doit conserver une 404/410 selon le contexte. Après ajout des règles dans `next.config.ts`, tester chaque source et chaque destination, puis conserver les 301 au moins un an.
+Ne pas rediriger toutes les anciennes URL vers l'accueil. Une page sans équivalent doit conserver une 404/410 selon le contexte. Après confirmation, ajouter les règles permanentes dans `next.config.ts`, tester chaque source et chaque destination, puis conserver les redirections au moins un an. Avec Next.js, `permanent: true` produit une redirection permanente 308, équivalente à une 301 pour le transfert SEO tout en préservant la méthode HTTP.

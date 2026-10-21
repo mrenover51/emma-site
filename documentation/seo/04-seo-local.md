@@ -2,7 +2,7 @@
 
 ## Cohérence NAP
 
-Référence unique utilisée sur le site : **Parenth'Emma — Emma Peynet**, 8 place Léon Bourgeois, 51190 Avize, 06 95 32 18 22, emmapeynet.naturopathe@gmail.com.
+Référence unique utilisée sur le site : **Emma Peynet**, 8 place Léon Bourgeois, 51190 Avize, 06 95 32 18 22, emmapeynet.naturopathe@gmail.com.
 
 **Réalisé** : coordonnées centralisées dans le code, téléphone et e-mail cliquables, adresse visible, itinéraire et zones de proximité cohérents. Aucune adresse fictive à Épernay, Vertus ou Blancs-Coteaux.
 
@@ -26,4 +26,4 @@ Les pages locales supplémentaires ne sont pas recommandées à ce stade : sans 
 
 ## Description proposée à valider
 
-« Parenth'Emma est le cabinet d'Emma Peynet à Avize. Elle propose des séances de réflexologie plantaire et palmaire, un accompagnement en naturopathie et gemmothérapie, ainsi qu'un coaching en nutrition. Les rendez-vous sont personnalisés et s'inscrivent dans une démarche de bien-être qui ne remplace pas un suivi médical. »
+« Emma Peynet accueille ses clients dans son cabinet à Avize. Elle propose des séances de réflexologie plantaire et palmaire, un accompagnement en naturopathie et gemmothérapie, ainsi qu'un coaching en nutrition. Les rendez-vous sont personnalisés et s'inscrivent dans une démarche de bien-être qui ne remplace pas un suivi médical. »

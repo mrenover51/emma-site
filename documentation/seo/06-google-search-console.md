@@ -4,6 +4,7 @@
 
 - Domaine de production centralisé : `https://www.emmapeynet.fr`.
 - Canonical absolues, `robots.txt` et `sitemap.xml` générés.
+- Métadonnées Open Graph et Twitter propres à chaque page publique.
 - Le code accepte `GOOGLE_SITE_VERIFICATION` sans valeur fictive.
 
 ## Mise en place — nécessite un accès externe

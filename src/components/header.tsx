@@ -17,9 +17,9 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-inner shell">
-        <Link href="/" className="brand" aria-label="Parenth'Emma, accueil">
+        <Link href="/" className="brand" aria-label="Emma Peynet, accueil">
           <Image src="/images/logo-emma.webp" alt="" width={1942} height={809} priority className="brand-logo"/>
-          <span className="sr-only">Parenth&apos;Emma — Emma Peynet</span>
+          <span className="sr-only">Emma Peynet</span>
         </Link>
         <nav className="desktop-nav" aria-label="Navigation principale">
           {navigation.map((item) => <Link key={item.href} href={item.href} className={pathname === item.href ? "active" : undefined}>{item.label}</Link>)}

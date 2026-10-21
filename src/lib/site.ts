@@ -1,15 +1,23 @@
+import type { Metadata } from "next";
+
 export const SITE = {
   name: "Emma Peynet",
   practitioner: "Emma Peynet",
   phoneDisplay: "06 95 32 18 22",
+  phoneInternational: "+33695321822",
   phoneHref: "tel:+33695321822",
   email: "emmapeynet.naturopathe@gmail.com",
   emailHref: "mailto:emmapeynet.naturopathe@gmail.com",
   addressLines: ["8 place Léon Bourgeois", "51190 Avize"],
   address: "8 place Léon Bourgeois, 51190 Avize",
+  streetAddress: "8 place Léon Bourgeois",
+  postalCode: "51190",
+  addressLocality: "Avize",
+  addressCountry: "FR",
   mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=8+place+L%C3%A9on+Bourgeois+51190+Avize",
   url: "https://www.emmapeynet.fr",
   interventionAreas: ["Avize", "Épernay", "Vertus", "Communes voisines"],
+  serviceAreas: ["Avize", "Épernay", "Vertus", "Blancs-Coteaux", "Côte des Blancs"],
   appointmentFormats: ["Au cabinet", "À domicile", "En entreprise", "En maison senior"],
 } as const;
 
@@ -49,12 +57,21 @@ export const services = [
   },
 ] as const;
 
-export function pageMetadata(title: string, description: string, path: string) {
+export function pageMetadata(title: string, description: string, path: string): Metadata {
   const canonical = new URL(path, SITE.url).toString();
   return {
     title,
     description,
     alternates: { canonical },
-    openGraph: { title, description, url: canonical, type: "website" as const, locale: "fr_FR", siteName: SITE.name },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+      locale: "fr_FR",
+      siteName: SITE.name,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Emma Peynet — réflexologie, naturopathie et coaching en nutrition à Avize" }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
   };
 }

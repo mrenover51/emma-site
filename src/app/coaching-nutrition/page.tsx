@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ServiceEditorial } from "@/components/service-editorial";
 import { pageMetadata } from "@/lib/site";
-export const metadata: Metadata = pageMetadata("Coaching en nutrition à Avize, près d’Épernay", "Coaching en nutrition avec Emma Peynet à Avize, près d’Épernay : des repères alimentaires personnalisés, progressifs et sans culpabilité.", "/coaching-nutrition");
+export const metadata: Metadata = pageMetadata("Coaching nutrition à Avize, près d’Épernay", "Coaching nutrition avec Emma Peynet à Avize et près d’Épernay : des repères alimentaires personnalisés, progressifs et sans culpabilité.", "/coaching-nutrition");
 function ServiceDetail(props: Record<string, unknown>) {
     void props;
     return <ServiceEditorial

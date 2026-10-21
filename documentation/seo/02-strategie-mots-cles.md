@@ -5,7 +5,7 @@ Les priorités ci-dessous sont des hypothèses d'intention, sans volume ni diffi
 ## Requêtes commerciales locales
 
 - Priorité haute : `réflexologie plantaire Avize`, `réflexologie Épernay`, `naturopathe Avize`, `naturopathie Épernay`.
-- Priorité moyenne : `coaching nutrition Avize`, `coaching nutrition Épernay`, `réflexologie Côte des Blancs`, `naturopathie Blancs-Coteaux`.
+- Priorité moyenne : `coaching nutrition Avize`, `coaching nutrition Épernay`, `gemmothérapie Avize`, `réflexologie Côte des Blancs`, `naturopathie Blancs-Coteaux`.
 - Requêtes de proximité : `réflexologue près d'Épernay`, `naturopathe Côte des Blancs`, sans créer de fausse adresse.
 
 ## Requêtes par prestation
@@ -16,7 +16,7 @@ Les priorités ci-dessous sont des hypothèses d'intention, sans volume ni diffi
 
 ## Marque et information
 
-- Marque : `Emma Peynet`, `Parenth'Emma`, `Parenth'Emma Avize`.
+- Marque : `Emma Peynet`, `Emma Peynet Avize`.
 - Questions : première séance, choix plantaire/palmaire, préparation du rendez-vous, localisation du cabinet, différences entre accompagnements.
 
 ## Principes

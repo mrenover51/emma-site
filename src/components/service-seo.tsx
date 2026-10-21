@@ -13,7 +13,7 @@ export function ServiceSeo({ name, description, path }: { name: string; descript
         description,
         url,
         provider: { "@id": `${SITE.url}/#business` },
-        areaServed: ["Avize", "Épernay", "Blancs-Coteaux", "Vertus", "Côte des Blancs"],
+        areaServed: SITE.serviceAreas,
       }} />
     </>
   );
